@@ -16,6 +16,7 @@ class ProductController extends Controller
      */
     public function index()
     {
+        dd(auth()->user());
         return Product::all(['id', 'name', 'price']);
     }
 
